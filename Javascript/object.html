@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Object 
+        var apple =  {
+        //   Property   Value 
+            company: "Apple",
+            model : "iPhone XR",
+            price : "$600",
+            ram : "2gb",
+            rom : "128gb",
+            colors : ['red','gray','black','white','gold']
+           
+        }
+
+        document.write("<table border=1><tr><th>Brand:</th><td> "+apple.company+"</td></tr><tr><th>Model:</th><td> "+apple.model+"</td></tr><tr><th>Color:</th><td> "+apple.colors[0]+"</td></tr><tr><th>Price</th><td>"+apple.price+"</td></tr><tr><th>Ram</th><td>"+apple.ram+"</td></tr><tr><th>Rom</th><td>"+apple.rom+"</td></tr><tr><th>Colors</th><td>"+apple.colors.join(" - ")+"</td></tr></table>")
+
+        // document.write("Brand: "+apple.company+"<br>Model: "+apple.model+"<br>Color: "+apple.colors[1])
+
+        // Direct Method 
+        var cars = new Object()
+
+        cars.model = "Civic X"
+        cars.color = ['black','white']
+        
+        document.write(cars.model)
+        document.write("<br>")
+
+        // Template Method 
+        function Cricket(player,format,score){
+
+            this.playerName = player
+            this.format = format
+            this.score = score
+
+        }
+        var babar = new Cricket("Babar","T20","2000")
+        var rizwan = new Cricket("Rizwan","T20","1800")
+
+        // document.write("Openers Name: "+babar.playerName+" & "+rizwan.playerName)
+
+        document.write(`Openers Name: <ul><li>${babar.playerName}</li> <li>${rizwan.playerName}</li></ul> `)
+
+
+        
+    </script>
+    
+</body>
+</html>

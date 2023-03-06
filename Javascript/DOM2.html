@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        background-color: brown;
+        font-size: 30px;
+        margin-top: 10px;
+    }
+</style>
+
+<body>
+    <label for="name">Name</label>
+    <input type="text" id="name" tabindex="1">
+    <input type="submit" value="Add" id="btn">
+    <div>My name is <span id="username"></span></div>
+
+    <script>
+
+        document.getElementById('btn').addEventListener('click', ()=>{
+            var getName = document.getElementById('name').value;
+            document.getElementById('username').innerText = getName
+        })
+
+        // document.getElementById('btn').addEventListener('click', addName)
+
+        // function addName() {
+        //     var getName = document.getElementById('name').value;
+        //     document.getElementById('username').innerText = getName
+        // }
+
+        var getdiv = document.getElementsByTagName('div')[0].innerHTML
+        console.log(getdiv)
+       
+
+
+        // document.getElementById('btn').addEventListener('click', function () {
+        //     var getName = document.getElementById('name').value;
+        //     document.getElementById('username').innerText = getName
+        // })
+
+
+
+        const a = 3.142
+        const pi = 3.142
+
+        let b = 6
+        b = 9
+
+        var c = 5
+
+        var c = 7
+        console.log(c)
+
+
+        function add() {
+            console.log(4 + 5)
+        }
+        //   Arrow Function 
+        const sub = (a,b) => {
+            console.log(a+b)
+        }
+        sub(4,10)
+
+       
+
+
+    </script>
+</body>
+
+</html>

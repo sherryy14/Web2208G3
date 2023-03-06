@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <title>Untitled Document</title>
+    <style>
+        #loader {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: 9999;
+            background: url("loader.gif") no-repeat center center;
+        }
+    </style>
+</head>
+<body>
+    <div id="loader"></div>
+
+    <div id="contents">
+        <h1>Content Goes Here</h1>
+    </div>
+    <script>
+        $(window).load(function () {
+            // Animate loader off screen
+            $('#contents').css('visibility', "hidden");
+            $("#loader").fadeOut(6000, function () {
+                $('#contents').css('visibility', "visible");
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var getDate = new Date();
+        document.write(getDate)
+
+        var today = getDate.getDay()
+        document.write(`<br>Today: ${today}`)
+
+        if (today == 0) {
+            document.write("<br>Sunday")
+        } else if (today == 1) {
+            document.write("<br>monday")
+        }else if (today == 2) {
+            document.write("<br>tuesday")
+        }else if (today == 3) {
+            document.write("<br>wednesday")
+        }else if (today == 4) {
+            document.write("<br>thursday")
+        }else if (today == 5) {
+            document.write("<br>friday")
+        }else{
+            document.write("<br>saturday")
+
+        }
+
+
+        var time = getDate.getTime()
+        document.write(`<br>Time: ${time}`)
+
+        var month = getDate.getMonth()
+        month++
+        document.write(`<br>Month: ${month}`)
+
+        var hour = getDate.getHours()
+        document.write(`<br>Hours: ${hour}`)
+        var year = getDate.getFullYear()
+        document.write(`<br>Year: ${year}`)
+    </script>
+</body>
+
+</html>

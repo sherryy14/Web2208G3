@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   #fname:focus{
+    background-color: gray;
+    color: antiquewhite;
+   }
+
+  input[type="text"]{
+    background-color: orange;
+  }
+  input[type="email"]{
+    background-color: red;
+  }
+  input[type="password"]{
+    background-color: yellowgreen;
+  }
+  .fname{
+    border: 2px solid green;
+    padding: 10px;
+    width: 50%;
+  }
+  .form{
+    border: 2px solid black;
+  }
+
+  .fs{
+    border: 2px solid orange;
+    width: 60%;
+    margin: auto;
+    height: 200px;
+
+    background: linear-gradient(to right, rgba(0,0,0,0.3), rgba(200,255,255,0.9)), url(image.jpg);
+  }
+  
+  .fs legend{
+    background-color: blueviolet;
+    color: white  ;
+    border: 2px solid black;
+    border-radius: 0 5px;
+  }
+
+</style>
+<body>
+
+
+    <h1>Forms</h1>
+
+    <form class="form" method="post">
+       <div class="fname">
+        <label for="fname">First Name: </label>
+        <input type="text" name="fname" id="fname" placeholder="Enter your first name" required autofocus>
+       </div>
+        <br> <br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" placeholder="Enter your last name"  required>
+        <br> <br>
+        <label for="uname">Username</label>
+        <input type="text" name="uname" id="uname"  placeholder="Enter username" required>
+        <br> <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"  placeholder="Enter your email" required>
+        <br> <br>
+        <label for="pass">Password</label>
+        <input type="password" name="pass" id="pass"  placeholder="Enter your password" required>
+        <br> <br>
+        <label for="">Gender</label> <br>   
+
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" required>
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" required> 
+        <br>
+        <label for="">MCQs</label>
+        <!-- <br>
+       <label for="html">HTML</label>
+       <input type="checkbox" name="mcq" id="html">
+       <label for="css">CSS</label>
+       <input type="checkbox" name="mcq" id="css">
+       <label for="js">JS</label>
+        <input type="checkbox" name="mcq" id="js">
+        <br>
+        <label for="">Feedback</label>
+        <textarea name="" id="" cols="20" rows="20" placeholder="Write your feedback" ></textarea>
+        <input type="url" name="" id="">
+        <br>
+        <input type="tel" name="" id="" maxlength="11">
+        <br>
+        <input type="number" name="" id="" min="0" max="10" step="2"> -->
+          <input type="text" name="" id="data" list="qf">
+        <datalist  id="qf">
+          <option value="Pak">
+          <option value="Ind">
+          <option value="NZ">
+          <option value="Eng">
+        </datalist>
+
+        <select name="" id="">
+          <option value="">Pak</option>
+          <option value="" selected>Ind</option>
+          <option value="">NZ</option>
+          <option value="">Eng</option>
+        </select>
+        <br> <br>
+
+        <fieldset class="fs">
+          <legend>Application Form</legend>
+          <label for="">First Name</label>
+          <input type="text">
+          <label for="">Last Name</label>
+          <input type="text">
+          <label for="">Email</label>
+          <input type="text">
+
+        </fieldset>
+    
+     
+        <button>Submit</button>
+    </form>
+
+</body>
+</html>

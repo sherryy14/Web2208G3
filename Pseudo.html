@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body{
+     background-color: cadetblue; 
+        background-image: url('bg.png');
+        background-repeat: repeat-y;
+        /* background-size: cover; */
+        background-attachment: fixed;
+    } 
+    .google{
+        background-color: wheat;
+        color: blue;
+        text-decoration: none;
+    }
+    .google:hover{
+        color: gray;
+        text-decoration: underline;
+        /* background-color: greenyellow; */
+    }
+
+    .gmail:visited{
+        color: red;
+
+    }
+
+    .container{
+        background-color: brown;
+        color: white;
+        text-align: center;
+        text-decoration: underline;
+       
+        font-size: 30px;
+        text-transform: uppercase;
+        word-spacing: 20px;
+        /* font-style: italic; */
+        /* font-variant: small-caps; */
+
+    }
+    .para{
+        text-indent: 50px;
+    }
+
+    .sp{
+        background-color: chocolate;
+    }
+    .para1{
+        border: 2px solid red;
+        /* padding-top: 10px;
+        padding-bottom: 15px;
+        padding-left: 20px ;
+        padding-right:25px ; */
+
+        /* padding: 10px 25px 15px 20px; */
+        /* padding: 20px 10px; */
+        padding: 20px;
+
+    }
+    .para2{
+        border: 2px solid green;
+    }
+</style>
+<body>
+    <h1>Pseudo Classes</h1>
+
+    <a class="google" href="https://classroom.google.com/u/0/h">Google Classroom</a>
+
+    <a class="gmail" href="https://classroom.google.com/u/0/h">Gmail</a>
+
+    <div class="container">
+        <h1>Div Container</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, consequatur.</p>
+    </div>
+    <ul style="list-style-type: none;">
+        <li><a href="#">Link1</a></li>
+        <li><a href="#">Link2</a></li>
+    </ul>
+
+    <p class="para1">Lorem ipsum dolor sit amet, consectetur <span class="sp">adipisicing elit</span>. Reprehenderit itaque laborum id repellendus magni quis rerum, totam eius et inventore velit amet nam magnam est quia nisi excepturi deserunt praesentium!</p>
+    <p class="para2">Lorem ipsum dolor sit amet, consectetur <span class="sp">adipisicing elit</span>. Reprehenderit itaque laborum id repellendus magni quis rerum, totam eius et inventore velit amet nam magnam est quia nisi excepturi deserunt praesentium!</p>
+    
+</body>
+</html>

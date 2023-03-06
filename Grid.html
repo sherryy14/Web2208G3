@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        border: 2px solid black;
+        background-color: cadetblue;
+        display: grid;
+        /* grid-template-columns: auto auto 100px 100px 100px; */
+        grid-template-rows: 100px 200px 300px 400px 500px;
+        /* grid-row-gap: 10px; */
+        grid-gap: 10px 0px ;
+    }
+
+    .container > div{
+        border: 2px solid blue;
+        padding: 20px 0;
+        /* margin: 10px 0; */
+    }
+
+    .nav{
+        display: grid;
+        grid-template-columns: 200px auto;
+        grid-column-gap: 5px ;
+    }
+    .nav > div{
+        border: 2px solid yellow;
+    } .nav ul{
+        display: flex;
+        justify-content: end;
+    }
+    .nav ul li{
+        margin: 0 20px;
+        list-style-type: none;
+    }
+    .b{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto;
+    }
+    .b > div{
+        
+        border: 2px solid green;
+    }
+    .item{
+        grid-column: 2 /6;
+    }
+    .item1{
+        grid-column: 1/6;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div>Logo</div>
+            <div>
+                <ul>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                </ul>
+            </div>
+        </div>
+        <div class="b">
+            <div>A</div>
+            <div class="item">B</div>
+            <div class="item1">C</div>
+            <div>D</div>
+            <div>E</div>
+        </div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+    </div>
+</body>
+</html>

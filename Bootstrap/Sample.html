@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<style>
+    .animationline::before{
+        content: ' ';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0%;
+        height: 5px;
+        z-index: 999;
+        background: rgb(50, 144, 0);
+        /* transform: scaleX(0);
+        transform-origin: right; */
+        animation: transform 5s linear infinite alternate;
+        /* transition: transform 5s linear; */
+    }
+    @keyframes transform {
+        0%{
+            width: 0%;
+        }
+        90%{
+            width: 100%;
+        }
+        100%{
+            width: 0%;
+            /* background: transparent; */
+        }
+    }
+    
+    /* .animationline:hover::before{
+       
+        transform: scaleX(1);
+        transform-origin: left;
+    
+    } */
+  
+</style>
+<body>
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                        </ul>
+                    </li>
+                    
+                </ul>
+              
+            </div>
+        </div>
+    </nav>
+   
+    <!-- Slider  -->
+    <div id="carouselExampleAutoplaying" class="carousel slide animationline" data-bs-ride="carousel">
+        <div class="carousel-inner ">
+          <div class="carousel-item active">
+            <img src="https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg?w=2000" class="d-block w-100" alt="..." height="600px">
+          </div>
+          <div class="carousel-item">
+            <img src="https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg?w=2000" class="d-block w-100" alt="..." height="600px">
+          </div>
+          <div class="carousel-item">
+            <img src="https://img.freepik.com/free-photo/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.jpg?w=2000" class="d-block w-100" alt="..." height="600px">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- Header -->
+    <div class="container">
+        <h1 class="text-center mt-5">Top Selling</h1>
+        <div class="row">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center my-5">
+                <div class="card" style="width: 18rem;" data-aos="fade-right">
+                    <img src="https://static.toiimg.com/thumb/83565509.cms?width=1200&height=900" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12  d-flex justify-content-center my-5">
+                <div class="card align-it" style="width: 18rem;" data-aos="fade-up">
+                    <img src="https://static.toiimg.com/thumb/83565509.cms?width=1200&height=900" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center my-5">
+                <div class="card" style="width: 18rem;" data-aos="fade-down">
+                    <img src="https://static.toiimg.com/thumb/83565509.cms?width=1200&height=900" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center my-5">
+                <div class="card" style="width: 18rem;" data-aos="fade-left">
+                    <img src="https://static.toiimg.com/thumb/83565509.cms?width=1200&height=900" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="text-center">About Us</h1>
+        <div class="text-success d-flex justify-content-center">
+            <hr class=" w-25 border border-primary border-2 opacity-75">
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <img src="https://a.cdn-hotels.com/gdcs/production0/d1513/35c1c89e-408c-4449-9abe-f109068f40c0.jpg?impolicy=fcrop&w=800&h=533&q=medium"
+                    alt="" class="w-100 rounded">
+            </div>
+            <div class="col-lg-6">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempore molestiae unde accusamus
+                    alias excepturi dolores dolorem? Quasi asperiores animi doloribus quo quaerat tenetur voluptates
+                    voluptas delectus magni veritatis qui aliquam repellat sint temporibus molestiae eum enim
+                    consequuntur dignissimos laborum itaque reiciendis natus, exercitationem hic. Nostrum, error?
+                    Nesciunt voluptas cupiditate consectetur ut ullam voluptatibus magni, labore quam ipsam dolorum
+                    eveniet ratione voluptatem totam molestias minus quos itaque incidunt dolor vitae quod soluta
+                    quaerat! Quia quasi minima ipsa vitae possimus, consequatur odio? Amet iusto pariatur ipsam aliquid
+                    a dolorum ex reprehenderit doloremque distinctio, accusamus ullam quos repellat! Reiciendis ad
+                    incidunt velit!</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-lg-4">
+                <button type="button" class="btn btn-light">Burger</button>
+                <button type="button" class="btn btn-light">Pizza</button>
+                <button type="button" class="btn btn-light">Pizza Fries</button>
+                <button type="button" class="btn btn-light">Sandwitch</button>
+
+            </div>
+            <div class="col-lg-8">
+                <h4 class="text-center">Products</h4>
+                <div class="row">
+                    <div class="col-lg-6 border">
+                        <button type="button" class="btn btn-light">Burger</button>
+                        <button type="button" class="btn btn-light">Pizza</button>
+                        <button type="button" class="btn btn-light">Pizza Fries</button>
+                        <button type="button" class="btn btn-light">Sandwitch</button>
+                        <button type="button" class="btn btn-light">Burger</button>
+                        <button type="button" class="btn btn-light">Pizza</button>
+                        <button type="button" class="btn btn-light">Pizza Fries</button>
+                        <button type="button" class="btn btn-light">Sandwitch</button>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <button type="button" class="btn btn-light">Burger</button>
+                        <button type="button" class="btn btn-light">Pizza</button>
+                        <button type="button" class="btn btn-light">Pizza Fries</button>
+                        <button type="button" class="btn btn-light">Sandwitch</button>
+                        <button type="button" class="btn btn-light">Burger</button>
+                        <button type="button" class="btn btn-light">Pizza</button>
+                        <button type="button" class="btn btn-light">Pizza Fries</button>
+                        <button type="button" class="btn btn-light">Sandwitch</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+ 
+<!-- 
+    <a href="" title="https://www.google.com">Google</a>
+    <div class="container-fluid bg-primary">
+        <div class="container">
+            <h1 title="Hypertext markup language">HTML</h1>
+        </div>
+    </div> -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-6 offset-md-3 ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis praesentium exercitationem dolor iste quaerat eligendi inventore omnis cum eum libero.
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        AOS.init();
+
+        // You can also pass an optional settings object
+        // below listed default settings
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+</body>
+
+</html>

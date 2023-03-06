@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .animate{
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        /* animation-name: xyz;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate; */
+        animation: xyz 3s ease-in-out 1s infinite alternate;
+        -webkit-animation: xyz 3s ease-in-out 1s infinite alternate;
+        -moz-animation: xyz 3s ease-in-out 1s infinite alternate;
+        -o-animation: xyz 3s ease-in-out 1s infinite alternate;
+    }
+    
+    @keyframes xyz {
+        from {border-radius: 0%;}
+        to{border-radius: 50%;}
+        
+    }
+    @-webkit-keyframes xyz {
+        from {border-radius: 0%;}
+        to{border-radius: 50%;}
+        
+    }
+    @-moz-keyframes xyz {
+        from {border-radius: 0%;}
+        to{border-radius: 50%;}
+        
+    }
+    @-o-keyframes xyz {
+        from {border-radius: 0%;}
+        to{border-radius: 50%;}
+        
+    }
+    .abc{
+        margin-top: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        animation: abc 10s ease-in-out 1s infinite alternate;
+        
+    }
+    @keyframes abc {
+        /* from{background-color: red; border-radius: 0%;}
+        to{background-color: black;  border-radius: 50%;} */
+
+        0% {background-color: red; left: 0px; top: 0px; border-radius: 0%;}
+        25% {background-color: green; left: 300px;top: 200px ; border-radius: 25%;}
+        /* 50% {background-color: yellow; left: 300px;top: 300px ; border-radius: 25%;} */
+        75% {background-color: blue; left: 0px;top: 200px ;border-radius: 50%;}
+        100% {background-color: black; left: 0px;top: 0px ;border-radius: 0%;}
+        
+    }
+    .a{
+        border-top-width:2px ;
+        border-bottom-width:2px ;
+        border-style:solid ;
+        border-top-color:red ;
+        border-left-color:yellow ;
+        border-right-color:green ;
+        border-bottom-color:blue ;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        animation: a 4s linear infinite;
+    }
+    @keyframes a {
+        from{rotate: 360deg;  border-right-color:black ;}
+        top{rotate: 360deg;}
+        
+    }
+    .b{
+        border-top-width:2px ;
+        border-bottom-width:2px ;
+        border-style:solid ;
+        border-top-color:white ;
+        border-left-color:red ;
+        border-right-color:green ;
+        border-bottom-color:white ;
+        border-radius: 50%;
+        position: relative;
+        left: 8px;
+        top: 8px;
+        width: 80px;
+        height: 80px;
+        animation: b 3s linear infinite ;
+    }
+    @keyframes b {
+        from{rotate: -360deg;}
+        to{rotate: -360deg;}
+        
+    }
+    .c{
+        border-top-width:2px ;
+        border-bottom-width:2px ;
+        border-style:solid ;
+        border-top-color:white ;
+        border-left-color:blue ;
+        border-right-color:yellow ;
+        border-bottom-color:white ;
+        border-radius: 50%;
+        position: relative;
+        left: 6px;
+        top: 6px;
+        width: 60px;
+        height: 60px;
+        animation: c 2s linear infinite ;
+    }
+    @keyframes c {
+        from{rotate: 0deg;}
+        to{rotate: 360deg;}
+        
+    }
+
+
+</style>
+<body>
+    <!-- <div class="animate"></div> -->
+
+    <!-- <div class="abc"></div> -->
+    <div class="a">
+        <div class="b">
+            <div class="c"></div>
+        </div>
+    </div>
+</body>
+</html>

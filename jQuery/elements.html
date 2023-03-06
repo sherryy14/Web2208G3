@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<style>
+    ol{
+        border: 1px solid red;
+        height: 100px;
+    }
+    .list{
+        background-color: blue;
+    }
+</style>
+<body>
+    <form action="" method="post">
+        <input type="text" name="username">
+        <input type="password" name="passwrd">
+        <input type="submit" value="Submit">
+    </form>
+<button id="btn">Remove</button>
+<button id="btn1">Empty</button>
+<button id="btn2">Add Class</button>
+    <ol>
+        <li>Name</li>
+        <li>Name</li>
+        <li>Name</li>
+        <li>Name</li>
+        <li>Name</li>
+    </ol>
+    <script>
+        console.log("first")
+
+        $(document).ready(function(){
+            console.log("second")
+            $('#btn').click(function(){
+                $('ol').remove()
+            })
+            $('#btn1').click(function(){
+                $('ol').empty()
+            })
+            $('#btn2').click(function(){
+                $('ol').toggleClass('list')
+            })
+        })
+
+        console.log("third")
+        </script>
+</body>
+</html>

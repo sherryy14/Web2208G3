@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #map{
+        width: 100%;
+        height: 400px;
+    }
+</style>
+<body>
+    <div id="map"></div>
+    <button>MAP</button>
+    <script>
+        function geolocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition)
+            } else {
+                alert("Doesn't Support ")
+            }
+        }
+
+        function showPosition(position) {
+            alert("Latitude: "+position.coords.latitude + "\n"+"Longtitude: " + position.coords.longitude)
+        }
+
+
+        let map;
+
+        function initMap() {
+            let myLocation = { lat:24.9273, lng: 67.0330 }
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: myLocation,
+                zoom: 20,
+            });
+            const marker = new google.maps.Marker({
+                position:  myLocation ,
+                map : map,
+                label: "A",
+                title: "Aptech Learning Institute",
+                draggable: false,
+                animation: google.maps.Animation.BOUNCE,
+                icon: 'icon.png'
+            });
+        }
+
+        window.initMap = initMap;
+
+    </script>
+
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOfoQEnSeEMhNmp8NI6ZZGulHloVCIZUA
+        &callback=initMap">
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onmouseleave="cal()">Calculator</button>
+    <button onclick="arr()">Array Calculator</button>
+    <script>
+        // without parameter 
+        function cal() {
+            var a = parseInt(prompt("Enter first number"))
+            var b = parseInt(prompt("Enter second number"))
+
+            var c = a + b;
+            var d = a - b;
+            var e = a * b;
+            var f = a / b;
+            document.write("<ul><li>Addtion:" + c + "</li>" + "<li>Subtraction:" + d + "</li>"
+                + "<li>Multiplication:" + e + "</li>" + "<li>Division:" + f + "</li></ul>")
+            // document.write(5+4)
+        }
+        function arr() {
+            var empDetails = [
+                ["A01", "Ali", "$500", "Developer"], //0
+                ["A02", "Raza", "$600", "IT"], //1
+                ["A03", "Sarim", "$15000", "Full Stack Developer"], //2
+                ["A04", "Dua", "$700", "HR"], //3
+                ["A05", "Dua", "$700", "HR"],//4
+                ["A05", "Dua", "$700", "HR"], //4
+                ["A05", "Dua", "$700", "HR"], //4
+                ["A05", "Dua", "$700", "HR"], //4
+                ["A05", "Dua", "$700", "HR"] //4
+            ]
+            document.write("<table border=1><tr><th>ID</th><th>Name</th><th>Salary</th><th>Designation</th></tr>")
+            for (var i = 0; i < empDetails.length; i++) {
+                // document.write(empDetails[i] + "<br>")
+                document.write("<tr>")
+                for (var j = 0; j < empDetails[0].length; j++) {
+                    document.write("<td>" + empDetails[i][j] + "</td>")
+
+                }
+                document.write("</tr>")
+            }
+        }
+        document.write("<br>")
+
+
+        // Global / Public
+        var age = 20
+             // with parameter
+        function greetings(fname, lname) {
+            // Local / Private
+            var fname = prompt("Enter your first name")
+
+            var lname = prompt("Enter your last name")
+
+            document.write("Hello " + fname + " " + lname + " and age " + age)
+        }
+        greetings()
+
+        console.log(age)
+        document.write("<br>")
+
+        var a =6;
+        var b =6;
+
+        function sum(){
+            document.write(a+b)
+            var c = 4
+        }
+        sum()
+        // document.write(c)
+
+        // Return statement 
+
+        function calculator(){
+            var a = 5
+            var b = 7   
+            var add = a+b
+            
+            return  add
+
+        }
+        calculator()
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

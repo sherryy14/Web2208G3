@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Single Dimensional Array 
+        var Emp = ["Ali","Dua","Saad","Saim","Raza","Sara","Asmar","Umair"]
+        document.write(Emp+"<br>")
+
+
+         // Array Methods 
+         var Empp = Emp.splice(1,0,"Mubeen")
+         document.write("Splice Array: "+Empp)
+         Emp.push("Mobeen") // push add values at last
+         Emp.pop() // pop removes value from last
+
+         Emp.unshift("Abrar") // unshift add values at beginning
+         Emp.shift() // shift removes values at beginning
+
+         var newEmp = Emp.join(" ")
+         console.log(newEmp)
+
+         var sliceEmp = Emp.slice(1,7) 
+         document.write(sliceEmp)
+        
+        document.write("<ul>")
+        for(var i = 0; i<Emp.length ;i++ ){
+            document.write("<li> "+"Employee Name= <b>"+Emp[i]+"</b></li>")
+        }
+        document.write("</ul>")
+
+        // New Array Method in ES6
+
+        var mobile = new Array(3);
+
+        mobile[0] = "samsung"
+        mobile[1] = "apple"
+        mobile[2] = "oppo"
+
+        document.write(mobile)
+
+
+       var class1 = ["A","B","C","D"]
+
+       var class2 = class1.splice(2,1,"E")
+       console.log(class1)
+
+
+     
+        
+
+    </script>
+</body>
+</html>

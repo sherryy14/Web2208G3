@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+var empDetails = [
+                ["A01", "Ali", "$500", "Developer"], //0
+                ["A02", "Raza", "$600", "IT"], //1
+                ["A03", "Sarim", "$15000", "Full Stack Developer"], //2
+                ["A04", "Dua", "$700", "HR"], //3
+                ["A05", "Dua", "$700", "HR"],//4
+                ["A05", "Dua", "$700", "HR"], //4
+                ["A05", "Dua", "$700", "HR"], //4
+                ["A05", "Dua", "$700", "HR"], //4
+                ["A05", "Dua", "$700", "HR"] //4
+            ]
+            document.write("<table border=1><tr><th>ID</th><th>Name</th><th>Salary</th><th>Designation</th></tr>")
+            for (var i = 0; i < empDetails.length; i++) {
+                // document.write(empDetails[i] + "<br>")
+                document.write("<tr>")
+                for (var j = 0; j < empDetails[0].length; j++) {
+                    document.write("<td>" + empDetails[i][j] + "</td>")
+
+                }
+                document.write("</tr>")
+            }
+
+    </script>
+</body>
+
+</html>

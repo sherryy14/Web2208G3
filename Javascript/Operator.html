@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body >
+
+    <script>
+        // Variable Desclaration 
+        var a =10;
+        var b =10;
+        // Equal to 
+        // alert(a==b)
+        // Not Equal 
+        // alert(a!=b)
+
+        // Relational Operator 
+        var eq = (a==b)
+        var noteq = (a!=b)
+        var streq = (a===b)
+        var strnoteq = (a!==b)
+        var greater = (a>b)
+        var less = (a<b)
+        var greatereq = (a>=b)
+        var lesseq = (a<=b)
+
+        console.log("Equal to "+eq) //F
+        console.log("Not Equal to "+noteq) //T
+        console.log("Strict Equal to "+streq) //F
+        console.log("Strict Not Equal to "+strnoteq) //T
+        console.log("Greater than "+greater) //F
+        console.log("Less than "+less) //T
+        console.log("Greater than Equal to "+greatereq) //F
+        console.log("Less than Equal to "+lesseq) //T
+
+         // Logical Operator 
+        var num1 = 5;
+        var num2 = 6;
+        var num3 = 6;
+                        // 1    x   1 x 1 = 1 AND Operator
+        document.write(num3 == num2  && num1 <= num3 && num1 < num2)
+        document.write("<br>")
+        
+        // 0 + 1 + 1 = 1 OR Operator
+        document.write(num3 < num2  || num1 <= num3 || num1 < num2)
+        
+        document.write("<br>")
+        // 0 x 1 + 1 
+        // 0  + 1 
+        //  1 
+                        // 1 x 0 + 0 =  0
+        document.write(!(num3 < num2) && !(num1 <= num3) || !(num1 < num2))
+        
+
+
+        document.write("<br>")
+        document.write( !(num1>num2) )
+        
+
+        // Assignment Operator 
+
+        var x =6;
+        var y = 7;
+
+         x += y;
+
+         y +=x ;
+         console.log(x)
+         console.log(y) 
+
+
+
+
+
+
+        console.log(typeof a)
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
